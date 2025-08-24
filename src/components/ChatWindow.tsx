@@ -125,7 +125,9 @@ export default function ChatWindow() {
   };
 
   return (
-    <div className="flex flex-col w-full max-w-4xl mx-auto h-[90vh] bg-background shadow-2xl rounded-2xl overflow-hidden border border-border">
+    <div className="flex flex-col w-full max-w-4xl mx-auto h-[90vh] bg-background/80 backdrop-blur-sm shadow-2xl rounded-2xl overflow-hidden border border-border">
+      {/* Static gradient background */}
+      <div className="absolute inset-0 -z-10 bg-medical-gradient opacity-10"></div>
 
       {/* Header */}
       <div className="bg-card/90 backdrop-blur-sm border-b border-border p-6">
